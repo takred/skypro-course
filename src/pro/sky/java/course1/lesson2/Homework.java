@@ -8,7 +8,7 @@ public class Homework {
         int c = 1;
         long d = 123L;
         float e = 12.3F;
-        double f = 12.6D;
+        double f = 12.6;
 
         // Задача 2
         float firstFighter = 78.2F;
@@ -36,36 +36,32 @@ public class Homework {
         // Задача 4
         short weightLossMin = 250;
         short weightLossMax = 500;
-        int weightLossMiddle = (weightLossMin + weightLossMax) / 2;
+        float targetWeight = 7000f;
 
-        short daysWithMinimalWeightLoss = 7000 / 250;
+        float daysWithMinimalWeightLoss = targetWeight / weightLossMin;
         System.out.println(daysWithMinimalWeightLoss + " дней потребуется, если худеть на " + weightLossMin + " грамм в день.");
 
-        short daysWithMaximumWeightLoss = 7000 / 500;
+        float daysWithMaximumWeightLoss = targetWeight / weightLossMax;
         System.out.println(daysWithMaximumWeightLoss + " дней потребуется, если худеть на " + weightLossMax + " грамм в день.");
 
-        float daysWithAverageWeightLoss = 7000F / weightLossMiddle;
+        float daysWithAverageWeightLoss = (daysWithMinimalWeightLoss + daysWithMaximumWeightLoss) / 2;
         System.out.println(daysWithAverageWeightLoss + " дней в среднем потребуется для похудения.");
 
         // Задача 5
         float incomeMashaOld = 67760F;
-        float incomeMashaPerYearOld = incomeMashaOld * 12;
         float incomeMashaNew = incomeMashaOld * 1.1F;
-        float incomeMashaPerYearNew = incomeMashaNew * 12;
-        System.out.println("Маша теперь получает " + incomeMashaNew + " рублей. Годовой доход вырос на " + (incomeMashaPerYearNew - incomeMashaPerYearOld) + " рублей");
+        float incomeDifferenceMasha = incomeMashaNew - incomeMashaOld;
+        System.out.println("Маша теперь получает " + incomeMashaNew + " рублей. Годовой доход вырос на " + (incomeDifferenceMasha * 12) + " рублей");
 
         float incomeDenisOld = 83690F;
-        float incomeDenisPerYearOld = incomeDenisOld * 12;
         float incomeDenisNew = incomeDenisOld * 1.1F;
-        float incomeDenisPerYearNew = incomeDenisNew * 12;
-        System.out.println("Денис теперь получает " + incomeDenisNew + " рублей. Годовой доход вырос на " + (incomeDenisPerYearNew - incomeDenisPerYearOld) + " рублей");
+        float incomeDifferenceDenis = incomeDenisNew - incomeDenisOld;
+        System.out.println("Денис теперь получает " + incomeDenisNew + " рублей. Годовой доход вырос на " + (incomeDifferenceDenis * 12) + " рублей");
 
         float incomeKristinaOld = 76230F;
-        float incomeKristinaPerYearOld = incomeKristinaOld * 12;
         float incomeKristinaNew = incomeKristinaOld * 1.1F;
-        float incomeKristinaPerYearNew = incomeKristinaNew * 12;
-        System.out.println("Кристина теперь получает " + incomeKristinaNew + " рублей. Годовой доход вырос на " + (incomeKristinaPerYearNew - incomeKristinaPerYearOld) + " рублей");
-
+        float incomeDifferenceKristina = incomeKristinaNew - incomeKristinaOld;
+        System.out.println("Кристина теперь получает " + incomeKristinaNew + " рублей. Годовой доход вырос на " + (incomeDifferenceKristina * 12) + " рублей");
 
         // Задача 6
         int aa = 12;
